@@ -1,0 +1,722 @@
+{
+	"info": {
+		"_postman_id": "0e8d3451-aeb3-46f1-b23a-4a1b9823cde7",
+		"name": "institute",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25974887"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "pd",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ryvaqugy@forexzig.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "student",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "7777777777",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "kolkata",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "04/02/1998",
+									"type": "text"
+								},
+								{
+									"key": "avatarUrl",
+									"type": "file",
+									"src": "/C:/Users/prant/Downloads/DeWatermark.ai_1758978573537.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8100/api/users/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify-email",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "pd",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ryvaqugy@forexzig.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "student",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "7777777777",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "kolkata",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "04/02/1998",
+									"type": "text"
+								},
+								{
+									"key": "avatarUrl",
+									"type": "file",
+									"src": "/C:/Users/prant/Downloads/DeWatermark.ai_1758978573537.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8100/api/users/verify-email?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ5dmFxdWd5QGZvcmV4emlnLmNvbSIsImlhdCI6MTc2MjY4Njg4NCwiZXhwIjoxNzYyNjkwNDg0LCJpc3MiOiJpbnN0aXR1dGUifQ.TB3mCy9jUv_h0jMhKZxP_DA5PpaCzttfuAjCpP_QDL0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"api",
+								"users",
+								"verify-email"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ5dmFxdWd5QGZvcmV4emlnLmNvbSIsImlhdCI6MTc2MjY4Njg4NCwiZXhwIjoxNzYyNjkwNDg0LCJpc3MiOiJpbnN0aXR1dGUifQ.TB3mCy9jUv_h0jMhKZxP_DA5PpaCzttfuAjCpP_QDL0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8100/api/users/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"api",
+								"users",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-profile",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "pdx",
+									"type": "text"
+								},
+								{
+									"key": "avatarUrl",
+									"type": "file",
+									"src": "/C:/Users/prant/Downloads/aa2af87d233194cb3a7e0089c57f68a8f286ac44.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8100/api/users/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"api",
+								"users",
+								"profile"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "pdx",
+									"disabled": true
+								},
+								{
+									"key": "avatarUrl",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "course",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"html\",\r\n    \"description\":\"html\",\r\n    \"duration\":\"4month\",\r\n    \"fees\":5000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8100/api/courses/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"api",
+								"courses",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit-course",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"MERN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8100/api/courses/691099c9c8ddfd0fa53ac9d6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"api",
+								"courses",
+								"691099c9c8ddfd0fa53ac9d6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "single",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"MERN\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8100/api/courses/691099c9c8ddfd0fa53ac9d6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"api",
+								"courses",
+								"691099c9c8ddfd0fa53ac9d6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "batch",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"course\":\"691099c9c8ddfd0fa53ac9d6\",\r\n\"name\":\"morning\",\r\n\"code\":\"m-9:30\",\r\n\"startDate\":\"10-09-2024\",\r\n\"endDate\":\"10-09-2025\",\r\n\"schedule\":\"09:00\",\r\n\"teacher\":\"6910a1f3717d5b605bd8fc0f\",\r\n\"capacity\":\"10\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8100/api/batches/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"api",
+								"batches",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\":\"morning-9-mern\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8100/api/batches/6910a237717d5b605bd8fc12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"api",
+								"batches",
+								"6910a237717d5b605bd8fc12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "assign -stu",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8100/api/batches/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"api",
+								"batches",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "single",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8100/api/batches/6910a237717d5b605bd8fc12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"api",
+								"batches",
+								"6910a237717d5b605bd8fc12"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "enrollment",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "attendance",
+			"item": [
+				{
+					"name": "mark",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"09-11-2025\",\r\n    \"session\":\"morning\",\r\n    \"records\":[{\"student\":\"691077a431d95699b916a33b\"},{\"status\":\"present\"}]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8100/api/attendance/6910a237717d5b605bd8fc12/mark",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"api",
+								"attendance",
+								"6910a237717d5b605bd8fc12",
+								"mark"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "batch",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"09-11-2025\",\r\n    \"session\":\"morning\",\r\n    \"records\":[{\"student\":\"691077a431d95699b916a33b\"},{\"status\":\"present\"}]\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8100/api/attendance/6910a237717d5b605bd8fc12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"api",
+								"attendance",
+								"6910a237717d5b605bd8fc12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "summary",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"09-11-2025\",\r\n    \"session\":\"morning\",\r\n    \"records\":[{\"student\":\"691077a431d95699b916a33b\"},{\"status\":\"present\"}]\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8100/api/attendance/6910a237717d5b605bd8fc12/summary",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"api",
+								"attendance",
+								"6910a237717d5b605bd8fc12",
+								"summary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view attendance",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"09-11-2025\",\r\n    \"session\":\"morning\",\r\n    \"records\":[{\"student\":\"691077a431d95699b916a33b\"},{\"status\":\"present\"}]\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8100/api/attendance/student/6910a237717d5b605bd8fc12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"api",
+								"attendance",
+								"student",
+								"6910a237717d5b605bd8fc12"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "exam",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"batch\":\"6910a237717d5b605bd8fc12\",\r\n    \"name\":\"oct-mern\",\r\n    \"description\":\"mid\",\r\n    \"date\":\"2025-11-20\",\r\n    \"durationInMinutes\":\"180\",\r\n    \"totalMarks\":\"20\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8100/api/exam/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"api",
+								"exam",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8100/api/exam/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"api",
+								"exam",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all-list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8100/api/exam/69113eac8e999c333aec4572",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"api",
+								"exam",
+								"69113eac8e999c333aec4572"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "assign-mark",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "result-batch",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "result-student",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "report",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

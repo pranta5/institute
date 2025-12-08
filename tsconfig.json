@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    // "exclude": ["node_modules", "**/*.spec.ts"],
+    "forceConsistentCasingInFileNames": true,
+    "allowUnusedLabels": false,
+    "strict": true,
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ESNext"]
+    // "typeRoots": [
+    //   "./types",
+    //   "./node_modules/@types",
+    //   "./app/interface/type.d.ts",
+    //   "./app/interface/global.d.ts"
+    // ]
+  }
+}
